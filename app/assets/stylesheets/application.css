@@ -1,0 +1,128 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ * {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ",
+      Meiryo, "MS Ｐゴシック", sans-serif;
+  }
+  header {
+    background-color: rgb(114, 116, 114);
+    height: 100px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header a {
+    color: white; 
+    text-decoration: none; 
+  }
+  header h1 {
+    color: white;
+    margin-left: 20px;
+  }
+  .header-list {
+    display: flex;
+    justify-content: flex-end;
+     }
+  header ul {
+    display: flex;
+  }
+  header li {
+    list-style: none;
+    margin-left: 60px;
+    position: relative;
+  }
+  /* header span {
+    position: absolute;
+    background-color: white;
+  } */
+
+  /* header span:hover {
+    opacity: 0;
+    padding-right: 50px;
+  } */
+  footer {
+    color: white;
+    height: 30px;
+    background-color: #000;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: flex-end;
+  }
+
+  .gnavi{
+    display: flex;
+    flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
+    margin:0 0 50px 0;
+    list-style: none;
+}
+
+.gnavi li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.gnavi li{
+    margin-bottom:20px;
+}
+
+.gnavi li a{
+  /*テキストの基点とするためrelativeを指定*/
+position: relative;
+  /*はみ出る要素を隠す*/
+overflow: hidden;
+padding:10px 60px;
+}
+
+.gnavi li span{
+  /*絶対配置でテキストの位置を決める*/
+position: absolute;
+left: 50%;
+top:0;
+  /*アニメーションの指定*/
+transition: all .5s;
+transform: translate(-50%, 0);/*X方向に-50% ※中央寄せにするため*/
+/*ブロック要素にして透過なし、テキスト折り返しなし*/  
+display: block;
+opacity:1;
+white-space: nowrap;
+}
+
+/*差し替わるテキストの設定*/
+.gnavi li span:nth-child(2){
+opacity:0;/*透過0に*/
+  transform: translate(-50%,100%);/*X方向に-50% Y方向に100%*/
+}
+
+/*hoverするとテキストが入れ替わる設定*/
+.gnavi li:hover span:nth-child(1){
+opacity:0;/*透過0に*/
+  transform: translate(-50%,-100%);/*X方向に-50% Y方向に-100%*/
+}
+
+.gnavi li:hover span:nth-child(2){
+opacity:1;/*不透明に*/
+transform: translate(-50%, 0);/*X方向に-50% Y方向に0*/
+}

@@ -1,0 +1,26 @@
+<%= form_tag({controller:"tweets",action:"index"}, method: :get) do %>
+    <p>Question1. 天気
+    <%= radio_button_tag :question1, '晴',class: "i" %>晴
+
+    <%= radio_button_tag :question1, '曇',class: "i" %>曇
+
+    <%= radio_button_tag :question1, '雨',class: "i" %>雨
+
+
+    <p>Question2. 季節
+    <%= radio_button_tag :question2, '春',class: "i" %>春
+
+    <%= radio_button_tag :question2, '夏',class: "i" %>夏
+
+    <%= radio_button_tag :question2, '秋',class: "i" %>秋
+
+    <%= radio_button_tag :question2, '冬',class: "i" %>冬
+
+    <p>Question3. 色
+    <%= radio_button_tag :question3, 'モノトーン',class: "i" %>モノトーン
+
+    <%= radio_button_tag :question3, 'ビビット',class: "i" %>ビビット
+
+
+    <%= submit_tag "診断する" %>
+<% end %>

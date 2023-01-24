@@ -1,0 +1,31 @@
+.slider {
+    width: 1000px;
+  height: 600px;
+  overflow: hidden;
+  margin: 0 auto;
+  
+  }
+  .slider-item {
+    width: 1000px;
+    float: left;
+  }
+  img{
+    width:100%;
+  }
+  .slider-inner {
+    width: 500%;
+    animation: slider 10s infinite ease;
+  }
+  
+  @keyframes slider {
+      0% {
+      transform: translateX(0);
+      }
+      50% {
+      transform: translateX(-1000px);
+      }
+      100% {
+      transform: translateX(0);
+      }
+  }
+
