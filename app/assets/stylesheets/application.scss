@@ -21,6 +21,8 @@
   body {
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ",
       Meiryo, "MS Ｐゴシック", sans-serif;
+      background-image: url("aosiro.jpg");
+      background-size: cover;
   }
   header {
     background-color: rgb(114, 116, 114);
@@ -29,36 +31,34 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 100%;
   }
   header a {
-    color: white; 
+    color: rgb(111, 182, 240); 
     text-decoration: none; 
+    
   }
   header h1 {
-    color: white;
-    margin-left: 20px;
+    color: rgb(247, 246, 246);
+    margin-left: 60px;
   }
+
   .header-list {
     display: flex;
     justify-content: flex-end;
-     }
+    color: rgb(215, 146, 146); 
+  }
+
   header ul {
     display: flex;
   }
+
   header li {
     list-style: none;
     margin-left: 60px;
     position: relative;
   }
-  /* header span {
-    position: absolute;
-    background-color: white;
-  } */
-
-  /* header span:hover {
-    opacity: 0;
-    padding-right: 50px;
-  } */
+ 
   footer {
     color: white;
     height: 30px;
@@ -76,16 +76,22 @@
     flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
     margin:0 0 50px 0;
     list-style: none;
+    font-family: 'Comic Sans MS',sans-serif;
+
 }
 
 .gnavi li a{
     display: block;
     text-decoration: none;
     color: white;
+    font-family: 'Comic Sans MS',sans-serif;
+
 }
 
 .gnavi li{
     margin-bottom:20px;
+    font-family: 'Comic Sans MS',sans-serif;
+
 }
 
 .gnavi li a{
@@ -114,6 +120,8 @@ white-space: nowrap;
 .gnavi li span:nth-child(2){
 opacity:0;/*透過0に*/
   transform: translate(-50%,100%);/*X方向に-50% Y方向に100%*/
+  font-family: 'Comic Sans MS',sans-serif;
+
 }
 
 /*hoverするとテキストが入れ替わる設定*/

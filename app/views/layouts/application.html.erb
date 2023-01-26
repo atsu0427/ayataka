@@ -14,18 +14,22 @@
 
   <body>
     <header>
-    <h1>Myapp</h1>
-    <div class="header-list">
-  
+    <h1>My stylist</h1>
 
    
-  <ul class="gnavi">
-      <li><%= link_to "ホーム", root_path %><span class="linkhover">home<span></li>
-      <li><%= link_to "新規投稿",tweets_new_path %><span class="linkhover">post<span</li>
-      <li><%= link_to "診断",tweets_test_path %><span class="linkhover">test<span</li>
-      <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %><span class="linkhover">logout<span</li>
+   
+    <div class="header-list">
+   <ul>
+  <div class="gnavi">
+      <li><%= link_to "sign up", new_user_registration_path %><span class="linkhover">新規登録<span></li>
+      <li><%= link_to "log in", tweets_path %><span class="linkhover">ログイン<span></li>
+      <li><%= link_to "home", root_path %><span class="linkhover">ホーム<span></li>
+      <li><%= link_to "post",tweets_new_path %><span class="linkhover">新規投稿<span</li>
+      <li><%= link_to "test",tweets_test_path %><span class="linkhover">診断<span</li>
+      <li><%= link_to 'log out', destroy_user_session_path, method: :delete %><span class="linkhover">ログアウト<span</li>
       </ul>
     </ul>
+    </div>
     </div>
     <link rel="stylesheet" type="text/css" href="css/5-3-9.css">
     </header>

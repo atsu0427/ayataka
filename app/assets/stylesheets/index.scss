@@ -2,6 +2,14 @@
     width: 50%;
     margin: 10px auto;
   }
+  h2 {
+    width: 150px;
+    margin: 30px auto;
+    margin-left: 200px;
+    padding-top: 30px;
+    font-family: 'Comic Sans MS';
+  }
+
   h3 {
     width: 150px;
     margin: 30px auto;
@@ -23,12 +31,18 @@
     justify-content: flex-end;
   }
 
+  .cardura{
+    background-image: url("siroao.jpg");
+    background-origin: border-box;
+    background-size: 900px, 600px;
+  }
+
   .field {
     margin-left: 60px;
     padding-top: 30px;
   }
 
   .submit {
-    margin-left: 60px;
+    margin-left: 40px;
     padding-top: 30px;
   }
