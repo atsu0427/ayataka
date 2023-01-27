@@ -21,12 +21,11 @@
     <div class="header-list">
    <ul>
   <div class="gnavi">
-      <li><%= link_to "sign up", new_user_registration_path %><span class="linkhover">新規登録<span></li>
-      <li><%= link_to "log in", tweets_path %><span class="linkhover">ログイン<span></li>
+      <li><%= link_to "log in", tweets_path %><span class="linkhover">ログイン<span></li></li>
       <li><%= link_to "home", root_path %><span class="linkhover">ホーム<span></li>
-      <li><%= link_to "post",tweets_new_path %><span class="linkhover">新規投稿<span</li>
+      <li><%= link_to "post", tweets_path %><span class="linkhover">投稿一覧<span></li>
+      <li><%= link_to "new post",tweets_new_path %><span class="linkhover">新規投稿<span</li>
       <li><%= link_to "test",tweets_test_path %><span class="linkhover">診断<span</li>
-      <li><%= link_to 'log out', destroy_user_session_path, method: :delete %><span class="linkhover">ログアウト<span</li>
       </ul>
     </ul>
     </div>
@@ -40,7 +39,13 @@
   
 </main>
   <footer>
-      <p>Copyright © GeekSalon All Rights Reserved.</p>
+      <ul>
+      <li><%= link_to "sign up", new_user_registration_path %></li>
+      <li><%= button_to "log out", destroy_user_session_path, method: :delete %></li>
+      <li><p>Copyright © GeekSalon All Rights Reserved.</p></li>
+      </ul>
+
+
     </footer>
   
 

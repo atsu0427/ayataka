@@ -1,6 +1,8 @@
 .container {
     width: 50%;
     margin: 10px auto;
+    list-style: none;
+    padding-bottom: 20px;
   }
   h2 {
     width: 150px;
@@ -11,15 +13,18 @@
   }
 
   h3 {
-    width: 150px;
+    width: 250px;
     margin: 30px auto;
     margin-left: 100px;
     padding-top: 30px;
+    font-family: 'Arial Black',sans-serif;
   }
   .tweet {
-    border-top: solid #00acee;
+    border-top: solid #080808;
     margin-top: 10px;
     padding-top: 20px;
+    margin-left: 50px;
+    font-family: 'Arial Black',sans-serif;
   }
   .main-box {
     margin: 5px 0;
@@ -31,18 +36,35 @@
     justify-content: flex-end;
   }
 
-  .cardura{
-    background-image: url("siroao.jpg");
-    background-origin: border-box;
-    background-size: 900px, 600px;
-  }
+  // .cardura{
+  //   background-image: url("sirokro.jpg");
+  //   background-origin: border-box;
+  //   background-size: 900px, 600px;
+  // }
 
   .field {
     margin-left: 60px;
     padding-top: 30px;
+    font-family: 'Arial Black',sans-serif;
+    font-size: 120%;
   }
 
   .submit {
     margin-left: 40px;
     padding-top: 30px;
   }
+  
+  h4{
+    
+      width: 250px;
+      margin: 30px auto;
+      margin-left: 100px;
+      padding-top: 30px;
+      font-family: 'Arial Black',sans-serif;
+      font-size: 100%;
+    }
+  
+  .line{
+    margin-left: 20px;
+  }
+  

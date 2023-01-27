@@ -21,7 +21,7 @@
   body {
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ",
       Meiryo, "MS Ｐゴシック", sans-serif;
-      background-image: url("aosiro.jpg");
+      background-image: url("midori.jpg");
       background-size: cover;
   }
   header {
@@ -29,9 +29,7 @@
     height: 100px;
     font-weight: bold;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 100%;
+    font-size: 120%;
   }
   header a {
     color: rgb(111, 182, 240); 
@@ -47,6 +45,7 @@
     display: flex;
     justify-content: flex-end;
     color: rgb(215, 146, 146); 
+    margin-left: 20px;
   }
 
   header ul {
@@ -58,7 +57,13 @@
     margin-left: 60px;
     position: relative;
   }
+   .link{
+    color:rgb(247, 246, 246);
+   }
  
+   a{
+    color:rgb(247, 246, 246);
+   }
   footer {
     color: white;
     height: 30px;
@@ -69,7 +74,18 @@
     align-items: center;
     position: fixed;
     justify-content: flex-end;
+    text-decoration: none; 
   }
+  footer ul {
+    display: flex;
+  }
+
+  footer li {
+    list-style: none;
+    margin-left: 60px;
+    position: relative;
+  }
+
 
   .gnavi{
     display: flex;

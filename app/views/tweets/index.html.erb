@@ -10,18 +10,17 @@
                 <% @tweets.each do |t| %>  
                 <div class="col-md-3">    
                         <div class="card" style="width: 15rem;">
-                        <div class="cardura">
-
-              
-          
-                
-                  <div class="card-body">
+                  
+                 <div class="cardura">
+                   <div class="card-body">
                   
                   <%= image_tag t.image_url, size: "250x200" if t.image? %>
                   
                     <%= t.body %>
                     <%= t.season %>
                     <%= t.feel %>
+
+                   </div>
 
 
                     <p class="card-text"></p>
@@ -44,12 +43,10 @@
       <%= link_to "詳細へ", tweet_path(t.id) %>
       <%= link_to "編集する", edit_tweet_path(t.id) %>
       <%= button_to "削除する", tweet_path(t.id), method: :delete %>
-			</div>
       
-      </div>
+                 </div>
 			            </div>
                 </div>
 			        <% end %>
 			    </div>
-			</div>
-			
+</div>
